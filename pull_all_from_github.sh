@@ -3,6 +3,13 @@ git pull
 echo ----------------------------------------------
 echo
 
+echo -------------- ANDOR -------------------------
+cd camera/andor
+git pull
+cd ../..
+echo ----------------------------------------------
+echo
+
 echo -------------- ADSC --------------------------
 cd camera/adsc
 git pull
@@ -17,6 +24,7 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+
 echo -------------- MarCCD ------------------------
 cd camera/marccd
 git pull
@@ -24,19 +32,21 @@ cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- PCO ------------------------
+
+echo ---------------- Pco -------------------------
 cd camera/pco
 git pull
 cd ../..
 echo ----------------------------------------------
-echo
+echo 
 
-echo -------------- Perkin Elmer ------------------------
+echo ------------ PerkinElmer ---------------------
 cd camera/perkinelmer
 git pull
 cd ../..
 echo ----------------------------------------------
-echo
+echo 
+
 
 echo -------------- Pilatus -----------------------
 cd camera/pilatus
@@ -45,14 +55,15 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- Prosilica -----------------------
+
+echo -------------- Prosilica ---------------------
 cd camera/prosilica
 git pull
 cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- Roperscientific -----------------------
+echo ----------- Roperscientific ------------------
 cd camera/roperscientific
 git pull
 cd ../..
