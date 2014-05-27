@@ -12,6 +12,23 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+echo -------------- Andor ------------------------
+cd camera/andor
+git tag -d "$version"
+git push origin :refs/tags/"$version"
+cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- Aviex ------------------------
+cd camera/aviex
+git tag -d "$version"
+git push origin :refs/tags/"$version"
+cd ../..
+echo ----------------------------------------------
+echo
+
+
 echo -------------- Basler ------------------------
 cd camera/basler
 git tag -d "$version"
