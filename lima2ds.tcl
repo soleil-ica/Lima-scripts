@@ -224,6 +224,9 @@ switch $::tcl_platform(platform) {
       #copy lima.camera andor library
       copy_file "LimaAndor"						"camera/andor/target/nar/lib"											"lib"      
 
+      #copy lima.camera hamamatsu library
+      copy_file "LimaHamamatsu"				    "camera/hamamatsu/target/nar/lib"										"lib"      
+
       ################################# shared library delivered by providers ###################################
 
       copy_file "Pvcam32.dll"                   "camera/roperscientific/sdk/msvc/bin/x86"                               "lib"      
@@ -235,6 +238,8 @@ switch $::tcl_platform(platform) {
 	  copy_file "XISL.dll"						"camera/perkinelmer/sdk/msvc/bin/"                     					"lib"  
 
 	  copy_file "ATMCD32D.DLL"					"camera/andor/sdk/msvc/bin/"											"lib"  
+
+      copy_file "dcamapi.dll"					"camera/hamamatsu/sdk/msvc/bin/"										"lib"  
 
     }
 }
