@@ -1,3 +1,16 @@
+#!/bin/sh
+
+# Author: FL / AN
+# Date: 27/05/2014
+
+# arguments 
+if [ $# -ne 1 ]; then
+	echo "Usage: ./remove_all_tag_github.sh version"
+	exit 2
+fi
+
+version=$1
+
 echo -------------- Lima Global -------------------
 git tag -d "$version"
 git push origin :refs/tags/"$version"
@@ -6,6 +19,22 @@ echo
 
 echo -------------- ADSC --------------------------
 cd camera/adsc
+git tag -d "$version"
+git push origin :refs/tags/"$version"
+cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- Andor --------------------------
+cd camera/andor
+git tag -d "$version"
+git push origin :refs/tags/"$version"
+cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- Aviex --------------------------
+cd camera/aviex
 git tag -d "$version"
 git push origin :refs/tags/"$version"
 cd ../..
