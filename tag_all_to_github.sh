@@ -18,7 +18,7 @@ git push --tag
 echo ----------------------------------------------
 echo
 
-echo -------------- ADSC --------------------------
+echo -------------- Adsc --------------------------
 cd camera/adsc
 git tag "$version" -m "$comment"
 git push --tag
@@ -50,6 +50,13 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+echo -------------- Hamamatsu ------------------------
+cd camera/hamamatsu
+git tag "$version" -m "$comment"
+git push --tag
+cd ../..
+echo ----------------------------------------------
+echo
 
 echo -------------- MarCCD ------------------------
 cd camera/marccd
