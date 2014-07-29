@@ -18,7 +18,7 @@ git archive HEAD | tar -x -C $target_dir/
 echo ----------------------------------------------
 echo
 
-echo -------------- ADSC --------------------------
+echo -------------- Adsc --------------------------
 cd camera/adsc
 git archive HEAD | tar -x -C $target_dir/camera/adsc/
 cd ../..
@@ -46,6 +46,13 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+echo -------------- Hamamatsu ------------------------
+cd camera/hamamatsu
+git archive HEAD | tar -x -C $target_dir/camera/hamamatsu/
+cd ../..
+echo ----------------------------------------------
+echo
+
 echo -------------- MarCCD ------------------------
 cd camera/marccd
 git archive HEAD | tar -x -C $target_dir/camera/marccd/
@@ -53,14 +60,14 @@ cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- PCO ------------------------
+echo -------------- Pco ------------------------
 cd camera/pco
 git archive HEAD | tar -x -C $target_dir/camera/pco/
 cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- perkinelmer ------------------------
+echo -------------- PerkinElmer ------------------------
 cd camera/perkinelmer
 git archive HEAD | tar -x -C $target_dir/camera/perkinelmer/
 cd ../..
