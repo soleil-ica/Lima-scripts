@@ -49,6 +49,14 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+echo -------------- Hamamatsu --------------------------
+cd camera/hamamatsu
+git tag -d "$version"
+git push origin :refs/tags/"$version"
+cd ../..
+echo ----------------------------------------------
+echo
+
 echo -------------- MarCCD ------------------------
 cd camera/marccd
 git tag -d "$version"
