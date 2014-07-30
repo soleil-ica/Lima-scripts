@@ -427,13 +427,14 @@ int main(int argc, char *argv[])
 		cout << "Fix exposure \t= " << exposure_time << " (ms)" << endl;
 		myControl.acquisition()->setAcqExpoTime(exposure_time / 1000.0); //convert exposure_time to sec
 		myControl.video()->setExposure(exposure_time / 1000.0); //convert exposure_time to sec
-		cout << "Fix Acc exposure= " << acc_max_exposure_time << " (ms)" << endl;
-		myControl.acquisition()->setAccMaxExpoTime(acc_max_exposure_time / 1000.0); //convert exposure_time to sec
 
 		//- fix latency
 		cout << "Fix latency \t= " << latency_time << " (ms)" << endl;
 		myControl.acquisition()->setLatencyTime(latency_time / 1000.0);  //convert latency_time to sec
 
+		cout << "Fix Acc exposure= " << acc_max_exposure_time << " (ms)" << endl;
+		myControl.acquisition()->setAccMaxExpoTime(acc_max_exposure_time / 1000.0); //convert exposure_time to sec
+		
 		//- fix nbFrames = 1
 		cout << "Fix nbFrames \t= " << nb_frames << endl;
 		myControl.acquisition()->setAcqNbFrames(nb_frames);
@@ -464,7 +465,6 @@ int main(int argc, char *argv[])
 			cout << "Snapping ..." << endl;
 			make_snap(myControl, myInterface);
 		}
-
 	}
 	catch (Exception e)
 	{
