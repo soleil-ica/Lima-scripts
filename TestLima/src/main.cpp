@@ -29,7 +29,7 @@ void wait_while_status_is_standby(CtControl& ct, Interface& hw)
 	CtControl::Status status;
 	HwInterface::StatusType state;
 
-	bool is_already_done = false;
+	bool is_already_displayed = false;
 	while (1)
 	{
 
@@ -41,10 +41,10 @@ void wait_while_status_is_standby(CtControl& ct, Interface& hw)
 		{
 			case lima::AcqReady:
 			{
-				if (!is_already_done)
+				if (!is_already_displayed)
 				{
 					cout << "Waiting for Request ..." << endl;
-					is_already_done = true;
+					is_already_displayed = true;
 				}				
 			}
 				break;
@@ -81,7 +81,7 @@ void wait_while_status_is_running(CtControl& ct, Interface& hw)
 	CtControl::Status status;
 	HwInterface::StatusType state;
 
-	bool is_already_done = false;
+	bool is_already_displayed = false;
 	while (1)
 	{
 
@@ -100,10 +100,10 @@ void wait_while_status_is_running(CtControl& ct, Interface& hw)
 
 			case lima::AcqRunning:
 			{
-				if (!is_already_done)
+				if (!is_already_displayed)
 				{
 					cout << "Acquisition is Running ..." << endl;
-					is_already_done = true;
+					is_already_displayed = true;
 				}
 			}
 				break;
@@ -122,7 +122,6 @@ void wait_while_status_is_running(CtControl& ct, Interface& hw)
 			}
 				break;
 		}
-
 	}
 }
 
@@ -150,7 +149,7 @@ void make_snap(CtControl& ct, Interface& hw)
 	clock_t end = clock();
 	double millis = (end - start) / 1000;
 	cout << "Elapsed time  = " << millis << " (ms)" << endl;
-	cout << "--------------------------------------------\n" << endl;
+		cout << "============================================\n" << endl;		
 }
 
 //--------------------------------------------------------------------------------------
@@ -265,18 +264,16 @@ int main(int argc, char *argv[])
 
 		//        
 		cout << "============================================" << endl;
-		cout << "ip_adress				= " << ip_adress << endl;
-		cout << "exposure_time			= " << exposure_time << endl;
-		cout << "acc_max_exposure_time	= " << acc_max_exposure_time << endl;
-		cout << "latency_time			= " << latency_time << endl;
-		cout << "nb_snap				= " << nb_snap << endl;
-		cout << "nb_frames				= "	<< nb_frames << endl;		
-		cout << "packet_size			= " << packet_size << endl;
-		cout << "interpacket_delay		= " << interpacket_delay << endl;
+		cout << "ip_adress              = " << ip_adress << endl;
+		cout << "exposure_time          = " << exposure_time << endl;
+		cout << "acc_max_exposure_time  = " << acc_max_exposure_time << endl;
+		cout << "latency_time           = " << latency_time << endl;
+		cout << "nb_snap                = " << nb_snap << endl;
+		cout << "packet_size            = " << packet_size << endl;
+		cout << "interpacket_delay      = " << interpacket_delay << endl;
 		cout << "============================================" << endl;
 
 		//initialize Balser::Camera objects & Lima Objects
-		cout << endl;
 		cout << "Create Camera Object" << endl;
 		Camera myCamera(ip_adress, packet_size);
 
@@ -286,6 +283,7 @@ int main(int argc, char *argv[])
 		cout << "Create CtControl Object" << endl;
 		CtControl myControl(&myInterface);
 
+		cout << "============================================" << endl;		
 		HwDetInfoCtrlObj *hw_det_info;
 		myInterface.getHwCtrlObj(hw_det_info);
 
@@ -296,10 +294,10 @@ int main(int argc, char *argv[])
 		myCamera.setInterPacketDelay(interpacket_delay);
 
 		//- fix Roi = (0,0,MaxWidth,MaxHeight)
-		cout << "Fix Roi \t= (0, 0, MaxWidth, MaxHeight)" << endl;
 		Size size;
-		hw_det_info->getDetectorImageSize(size);
+		hw_det_info->getMaxImageSize(size);
 		Roi myRoi(0, 0, size.getWidth(), size.getHeight());
+		cout << "Fix Roi \t= ("<<0<<","<<0<<","<<size.getWidth()<<","<<size.getHeight()<<")" << endl;
 		myControl.image()->setRoi(myRoi);
 
 		//- fix Bin = (1,1)
@@ -311,7 +309,7 @@ int main(int argc, char *argv[])
 		cout << "Fix exposure \t= " << exposure_time << " (ms)" << endl;
 		myControl.acquisition()->setAcqExpoTime(exposure_time / 1000.0); //convert exposure_time to sec
 		myControl.video()->setExposure(exposure_time / 1000.0); //convert exposure_time to sec
-		cout << "Fix Acc exposure \t= " << acc_max_exposure_time << " (ms)" << endl;		
+		cout << "Fix Acc exposure= " << acc_max_exposure_time << " (ms)" << endl;		
 		myControl.acquisition()->setAccMaxExpoTime(acc_max_exposure_time / 1000.0); //convert exposure_time to sec
 
 		//- fix latency
@@ -319,10 +317,10 @@ int main(int argc, char *argv[])
 		myControl.acquisition()->setLatencyTime(latency_time / 1000.0);  //convert latency_time to sec
 
 		//- fix nbFrames = 1
-		cout << "Fix nbFrames \t= 1" << endl;
+		cout << "Fix nbFrames \t= " << nb_frames<<endl;
 		myControl.acquisition()->setAcqNbFrames(nb_frames);
 
-		cout << "--------------------------------------------\n\n" << endl;
+		cout << "\n" << endl;
 
 		//start nb_snap acquisition of 1 frame
 		for (unsigned i = 0; i < nb_snap; i++)
