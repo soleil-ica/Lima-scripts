@@ -53,6 +53,13 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+echo -------------- Eiger ------------------------
+cd camera/eiger
+git archive HEAD | tar -x -C $target_dir/camera/eiger/
+cd ../..
+echo ----------------------------------------------
+echo
+
 echo -------------- MarCCD ------------------------
 cd camera/marccd
 git archive HEAD | tar -x -C $target_dir/camera/marccd/
@@ -91,6 +98,13 @@ echo
 echo -------------- roperscientific ------------------------
 cd camera/roperscientific
 git archive HEAD | tar -x -C $target_dir/camera/roperscientific/
+cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- Uview ------------------------
+cd camera/uview
+git archive HEAD | tar -x -C $target_dir/camera/uview/
 cd ../..
 echo ----------------------------------------------
 echo

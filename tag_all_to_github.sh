@@ -50,6 +50,14 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+echo -------------- Eiger ------------------------
+cd camera/eiger
+git tag "$version" -m "$comment"
+git push --tag
+cd ../..
+echo ----------------------------------------------
+echo
+
 echo -------------- Hamamatsu ------------------------
 cd camera/hamamatsu
 git tag "$version" -m "$comment"
@@ -106,6 +114,13 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
+echo -------------- UView ---------------
+cd camera/uview
+git tag "$version" -m "$comment"
+git push --tag
+cd ../..
+echo ----------------------------------------------
+echo 
 
 echo -------------- Xpad --------------------------
 cd camera/xpad
