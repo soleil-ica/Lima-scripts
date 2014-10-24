@@ -206,6 +206,9 @@ switch $::tcl_platform(platform) {
       #copy Device LimaDetector
       copy_file "ds_LimaDetector.exe"           "applications/tango/LimaDetector/target/nar/"                           ""
 
+      #copy Device LimaDetector
+      copy_file "ds_LimaDetector.pdb"           "applications/tango/LimaDetector/target/nar/"                           ""
+
       #copy lima.control library
       copy_file "LimaCore"                		"target/nar/lib/"                                                		"lib"
 	
