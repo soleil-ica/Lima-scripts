@@ -233,6 +233,9 @@ switch $::tcl_platform(platform) {
       #copy lima.camera hamamatsu library
       copy_file "LimaHamamatsu"				    "camera/hamamatsu/target/nar/lib"										"lib"      
 
+      #copy lima.camera hamamatsu library
+      copy_file "LimaUview"                     "camera/uview/target/nar/lib"                                           "lib"      
+
       ################################# shared library delivered by providers ###################################
 
       copy_file "Pvcam32.dll"                   "camera/roperscientific/sdk/msvc/bin/x86"                               "lib"      
