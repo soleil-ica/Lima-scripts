@@ -17,11 +17,10 @@ class BuildError(Exception):
   pass
 
 #------------------------------------------------------------------------------
-def prepare(proxyname,expo,nbframes,filegeneration):
+def prepare(proxy,expo,nbframes,filegeneration):
 
     print '\nprepare\n--------'
     #Configure the device
-    proxy = PyTango.DeviceProxy(proxyname)
     proxy.exposureTime = float(expo)
     proxy.nbFrames = int(nbframes)
     proxy.fileGeneration = int(filegeneration)
@@ -38,7 +37,8 @@ def prepare(proxyname,expo,nbframes,filegeneration):
 
 
     #Loop while state is RUNNING (prepare in progress...)
-    while (proxy.currentFrame<proxy.nbFrames):
+    state = proxy.state()
+    while (state==PyTango.DevState.RUNNING):
         state = proxy.state()
         if state == PyTango.DevState.STANDBY:
             break
@@ -53,11 +53,10 @@ def prepare(proxyname,expo,nbframes,filegeneration):
 
 
 #------------------------------------------------------------------------------
-def snap(proxyname):
+def snap(proxy):
 
     print '\nsnap\n--------'
-    #Configure the device
-    proxy = PyTango.DeviceProxy(proxyname)
+    #Configure the device    
 
     #Display time when state is STANDBY (just before Snap())
     timeBegin = datetime.datetime.now().isoformat()
@@ -69,7 +68,8 @@ def snap(proxyname):
     print timeSnap, ' - ', proxy.state()
 
     #Loop while state is RUNNING (acquisition in progress...)
-    while (proxy.currentFrame<proxy.nbFrames):
+    state = proxy.state()
+    while (state==PyTango.DevState.RUNNING):
         state = proxy.state()
         if state == PyTango.DevState.STANDBY:
             break
@@ -79,8 +79,8 @@ def snap(proxyname):
     #Display time when state is STANDBY (just after acquisition is finish)
     timeEnd = datetime.datetime.now().isoformat()
     print '\n', timeEnd, ' - ', proxy.state()
-
-    return proxy.image
+    return
+    #return proxy.image
 
 
 #------------------------------------------------------------------------------
@@ -90,23 +90,28 @@ def usage():
   print "Usage: [python] test_limadetector.py <my/device/proxy> <exposureTime> <nbFrames> <fileGeneration>"
   sys.exit(1)
 
+
+#------------------------------------------------------------------------------
+# run
+#------------------------------------------------------------------------------
+def run(proxy_name, exposure_time, nb_frames, file_generation=True):
+    # Blabla
+    proxy = PyTango.DeviceProxy(proxy_name)
+    nb_frames = int(nb_frames)
+  
+    try:
+        prepare(proxy,exposure_time,nb_frames,file_generation)
+        snap(proxy)
+        if proxy.currentFrame!=nb_frames:
+            print 'FAIL : Acquired frames (%s) is different from requested nb_frames (%s)'  % (proxy.currentFrame, nb_frames)
+        return proxy.image
+    except Exception, err:
+	   sys.stderr.write('--------\nERROR :\n--------\n%s\n' % str(err))
+
 #------------------------------------------------------------------------------
 # Main Entry point
 #------------------------------------------------------------------------------
 if __name__ == "__main__":
-  
-  if len(sys.argv) < 4:
-	usage()
-
-  proxy_name = sys.argv[1]
-  exposure_time = sys.argv[2]
-  nb_frames = sys.argv[3]  
-  file_generation = sys.argv[4]  
-
-  try:
-    prepare(proxy_name,exposure_time,nb_frames,file_generation)
-    snap(proxy_name)
-  except Exception, err:
-	sys.stderr.write('--------\nERROR :\n--------\n%s\n' % str(err))
-
-#------------------------------------------------------------------------------
+    if len(sys.argv) < 4:
+        usage()
+    print run(*sys.argv[1:])
