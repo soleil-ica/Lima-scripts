@@ -1,4 +1,9 @@
-echo -------------- Lima Global -------------------
+#!/bin/sh
+
+# Author: FL / AN
+# Date: 12/12/2014
+
+echo -------------- Lima Core -------------------
 git pull git://github.com/esrf-bliss/Lima.git
 echo ----------------------------------------------
 echo
@@ -6,6 +11,20 @@ echo
 echo -------------- ADSC --------------------------
 cd camera/adsc
 git pull git://github.com/esrf-bliss/Lima-camera-adsc
+cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- Andor -------------------------
+cd camera/andor
+git pull git://github.com/esrf-bliss/Lima-camera-andor
+cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- Aviex -------------------------
+cd camera/aviex
+git pull git://github.com/esrf-bliss/Lima-camera-aviex
 cd ../..
 echo ----------------------------------------------
 echo
@@ -37,6 +56,13 @@ git pull git://github.com/esrf-bliss/Lima-camera-perkinelmer
 cd ../..
 echo ----------------------------------------------
 echo
+
+echo -------------- Pilatus -----------------------
+cd camera/pilatus
+git pull git://github.com/esrf-bliss/Lima-camera-pilatus
+cd ../..
+echo ----------------------------------------------
+echo 
 
 echo -------------- Prosilica -----------------------
 cd camera/prosilica
