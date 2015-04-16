@@ -36,9 +36,23 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+echo -------------- Eiger ------------------------
+cd camera/eiger
+git pull git://github.com/esrf-bliss/Lima-camera-eiger
+cd ../..
+echo ----------------------------------------------
+echo
+
 echo -------------- MarCCD ------------------------
 cd camera/marccd
 git pull git://github.com/esrf-bliss/Lima-camera-marccd
+cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- Merlin ------------------------
+cd camera/merlin
+git pull git://github.com/esrf-bliss/Lima-camera-merlin
 cd ../..
 echo ----------------------------------------------
 echo
