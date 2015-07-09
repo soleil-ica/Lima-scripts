@@ -74,6 +74,14 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+echo -------------- Merlin ------------------------
+cd camera/merlin
+git tag "$version" -m "$comment"
+git push --tag
+cd ../..
+echo ----------------------------------------------
+echo
+
 echo -------------- Pco --------------------------
 cd camera/pco
 git tag "$version" -m "$comment"
