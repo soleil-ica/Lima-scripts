@@ -92,6 +92,13 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
+echo -------------- Uview --------------------------
+cd camera/uview
+git pull git://github.com/esrf-bliss/Lima-camera-uview
+cd ../..
+echo ----------------------------------------------
+echo
+
 echo -------------- Xpad --------------------------
 cd camera/xpad
 git pull git://github.com/esrf-bliss/Lima-camera-xpad
