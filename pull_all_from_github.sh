@@ -85,6 +85,13 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
+echo -------------- Uview --------------------------
+cd camera/uview
+git pull --rebase git@github.com:soleil-ica/Lima-camera-uview
+cd ../..
+echo ----------------------------------------------
+echo
+
 echo -------------- Xpad --------------------------
 cd camera/xpad
 git pull --rebase git@github.com:soleil-ica/Lima-camera-xpad
