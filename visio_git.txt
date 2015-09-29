@@ -1,0 +1,157 @@
+/********
+time_t epch = 1431012727;
+printf("%i -> %s", epch, asctime(gmtime(&epch))); (time.h) 
+ 
+*********/
+
+ 737  git --version
+  738  gitk --all&
+  739  cd DeviceSources/Lima
+  740  ll
+  741  gitk --all&
+  742  git remote -v
+  743  git fetch esrf-bliss
+  744  gitk --all
+  745  bg
+  746  git remote -v
+  747  git remote rm esrf-bliss
+  748  git remote add esrf-bliss git://github.com/esrf-bliss/Lima.git
+  749  git fetch esrf-bliss
+  750  git checkout esrf-bliss/master -b test_seb
+  751  vim LIMA_GPL_HEADER.txt
+  752  git diff
+  753  git diff LIMA_GPL_HEADER.txt
+  754  git add LIMA_GPL_HEADER.txt
+  755  git commit -m "Change date
+  756  git commit -m "Change date"
+  757  git checkout master -b test_local
+  758  git merge test_seb
+  759  git checkout 79fc7a -b tagada
+  760  vim LIMA_GPL_HEADER.cpp.txt
+  761  git add LIMA_GPL_HEADER.cpp.txt
+  762  git commit -m "un super test"
+  763  git checkout test_local
+  764  git merge tagada
+  765  git checkout tagada
+  766  git commit --amend
+  767  git checkout master
+  768  git branch -D tagada test_seb test_local
+  769  git status
+  770  git status --color
+  771  git status
+  772  git diff
+  773  git show ebf83d0e555c078278b2d44df8bf14a2e6e4a2f4 LIMA_GPL_HEADER.txt
+  774  git show ebf83d0e555c078278b2d44df8bf14a2e6e4a2f4:LIMA_GPL_HEADER.txt
+  775  git show ebf83d0e555c078278b2d44df8bf14a2e6e4a2f4 LIMA_GPL_HEADER.txt
+  776  git show ebf83d0e555c078278b2d44df8bf14a2e6e4a2f4:LIMA_GPL_HEADER.txt
+  777  git checkout master -b test
+  778  git merge ebf83d0e555c078278b2d44df8bf14a2e6e4a2f4
+  779  git co master
+  780  git checkout  master
+  781  git branch -D test
+  782  git status
+  783  git diff esrf-bliss/master master control/src/CtSaving_Nxs.*
+  784  git diff esrf-bliss/master master control/src/CtSaving_Nxs.*
+  785  git show origin
+  786  git remote show origin
+  787  more ../Lima-scripts/pull_all_from_github_esrf-bliss.sh
+  788  ls
+  789  git status
+  790  git checkout master -b arafat_tmp
+  791  git add camera/simulator/src/SimulatorCamera.cpp
+  792  git commit -m "tmp modif"
+  793  git checkout master
+  794  git show master arafat_tmp
+  795  git show master:camera/simulator/src/SimulatorCamera.cpp
+  796  git show master arafat_tmp
+  797  git show arafat_tmp:camera/simulator/src/SimulatorCamera.cpp
+  798  git show arafat_tmp:camera/simulator/src/SimulatorCamera.cpp > /tmp/arafat_SimulationCamera.cpp
+  799  vim /tmp/arafat_SimulationCamera.cpp
+  800  vim /tmp/arafat_SimulationCamera.cpp
+  801  git show master:camera/simulator/src/SimulatorCamera.cpp > /tmp/master_SimulationCamera.cpp
+  802  vim /tmp/master_SimulationCamera.cpp
+  803  vim /tmp/arafat_SimulationCamera.cpp
+  804  git diff esrf-bliss/master master
+  805  git diff esrf-bliss/master master
+  806  git checkout esrf-bliss/master common/include/lima/VideoUtils.h
+  807  git status
+  808  git status
+  809  git diff esrf-bliss/master master
+  810  cd applications/tango/
+  811  git remote -v
+  812  git remote add esrf-bliss git://github.com/esrf-bliss/Lima-tango.git
+  813  git fetch esrf-bliss
+  814  gitk --all&
+  815  git diff esrf-bliss/master master
+  816  cd ../..
+  817  git checkout esrf-bliss/master -b Nxs_patch_001
+  818  gitk --all&
+  819  cd control/src/
+  820  vim CtSaving_Nxs.cpp
+  821  git add CtSaving_Nxs.cpp
+  822  git commit -m "Change date"
+  823  vim CtSaving_Nxs.cpp
+  824  vim CtSaving_Nxs.cpp
+  825  git add CtSaving_Nxs.cpp
+  826  git commit --amend
+  827  vim CtSaving_Nxs.cpp
+  828  git add CtSaving_Nxs.cpp
+  829  git commit -m "Change owner"
+  830  cd ..
+  831  cd ..
+  832  git checkout master -b merge_test
+  833  git merge Nxs_patch_001
+  834  git checkout esrf-bliss/master -b master_esrf
+  835  git merge Nxs_patch_001
+  836  git reset --hard esrf-bliss/master
+  837  git merge Nxs_patch_001 --no-ff
+  838  git commit --amend
+  839  git checkout Nxs_path_001
+  840  git checkout Nxs_patch_001
+  841  vim control/src/CtSaving_Nxs.cpp
+  842  git add control/src/CtSaving_Nxs.cpp
+  843  git commit -m "small modif"
+  844  git checkout master_esrf
+  845  git merge Nxs_patch_001 --no-ff
+  846  git status
+  847  git reset --hard 6c0584623e00095714e5ffc58d94b383549393f0
+  848  git checkout merge_test
+  849  git merge Nxs_path_001 --no-ff
+  850  git merge Nxs_patch_001 --no-ff
+  851  git commit --amend
+  852  git checkout master -b Nxs_patch_002
+  853  git cherry-pick 6c0584623e00095714e5ffc58d94b383549393f0..6c0584623e00095714e5ffc58d94b383549393f0
+  854  git cherry-pick 6c0584623e00095714e5ffc58d94b383549393f0..6c0584623e00095714e5ffc58d94b383549393f0
+  855  git cherry-pick e798179777c87bec97f8b0e25a628bff8901bc1d..e798179777c87bec97f8b0e25a628bff8901bc1d
+  856  git cherry-pick 6c0584623e00095714e5ffc58d94b383549393f0..1ee37
+  857  git cherry-pick 6c0584623e00095714e5ffc58d94b383549393f0..e1ee37
+  858  git checkout esrf-bliss/master -b merge_super_patch
+  859  git cherry-pick 6c0584623e00095714e5ffc58d94b383549393f0..e1ee37
+  860  git branch -D Nxs_patch_001
+  861  git branch -D merge_patch
+  862  git branch -D merge_test
+  863  git checkout merge_super_patch
+  864  git rebase -i esrf-bliss/master
+  865  git status
+  866  git reset --hard esrf-bliss/master
+  867  git status
+  868  git cherry-pick 83b7..d66f7
+  869  git status
+  870  git branch -m merge_super_patch Nxs_patch_001_esrf
+  871  git remote -v
+  872  git remote set-url --push esrf-bliss git@github.com:esrf-bliss/Lima.git
+  873  git remote -v
+  874  cd control/src/
+  875  ls
+  876  vi CtBuffer.cpp
+  877  cd ../../
+  878  cd common/src
+  879  ls
+  880  vi MemUtils.cpp
+  881  cd ../
+  882  cd ../camera/pco/
+  883  gitk --all&
+  884  cd ..
+  885  cd ..
+  886  ls
+  887  gitk --all
