@@ -37,9 +37,7 @@ echo ----------------------------------------------
 echo
 
 echo -------------- Eiger ------------------------
-cd camera/eiger
-git fetch git://github.com/esrf-bliss/Lima-camera-eiger
-cd ../..
+echo Nothing to do
 echo ----------------------------------------------
 echo
 
@@ -72,9 +70,7 @@ echo ----------------------------------------------
 echo
 
 echo -------------- Pilatus -----------------------
-cd camera/pilatus
-git fetch git://github.com/esrf-bliss/Lima-camera-pilatus
-cd ../..
+echo Nothing to do
 echo ----------------------------------------------
 echo 
 
