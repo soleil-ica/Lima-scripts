@@ -154,7 +154,7 @@ switch $::tcl_platform(platform) {
     unix {
 
       #copy Device LimaDetector
-      copy_file "ds_LimaDetector"               "applications/tango/LimaDetector/target/nar/"                           ""
+      copy_file "ds_LimaDetector"               "applications/tango/cpp/target/nar/"                                    ""
 
       #copy lima.control library
       copy_file "libLimaCore"                	"target/nar/lib"                                                		"lib"
@@ -187,10 +187,13 @@ switch $::tcl_platform(platform) {
       copy_file "libLimaAdsc"             		"camera/adsc/target/nar/lib"                                     		"lib"
 
       #copy lima.camera plugin library
-      copy_file "libLimaEiger"                   "camera/eiger/target/nar/lib"                                            "lib"
+      copy_file "libLimaEiger"                  "camera/eiger/target/nar/lib"                                           "lib"
 
       #copy lima.camera plugin library
-      copy_file "libLimaMerlin"                   "camera/merlin/target/nar/lib"                                            "lib"	  
+      copy_file "libEigerAPI"                  "camera/eiger/sdk/linux/EigerAPI/target/nar/lib"                        "lib"
+
+      #copy lima.camera plugin library
+      copy_file "libLimaMerlin"                 "camera/merlin/target/nar/lib"                                          "lib"	  
 	  
       ################################# shared library delivered by providers ###################################
             
@@ -200,7 +203,7 @@ switch $::tcl_platform(platform) {
       
       copy_file "libPvAPI.so"             		"camera/prosilica/sdk/bin/x86"			                        		"lib"
 
-      copy_file "libMx.so.1"             			"camera/aviex/sdk/linux/lib"			                        	"lib"
+      copy_file "libMx.so.1"                    "camera/aviex/sdk/linux/lib"    			                        	"lib"
 
       copy_file "libtiff.so.5"             		"camera/pilatus/sdk/linux/lib"			                        		"lib"	  
     }
@@ -208,10 +211,10 @@ switch $::tcl_platform(platform) {
     windows {
 
       #copy Device LimaDetector
-      copy_file "ds_LimaDetector.exe"           "applications/tango/LimaDetector/target/nar/"                           ""
+      copy_file "ds_LimaDetector.exe"           "applications/tango/cpp/target/nar/"                           ""
 
       #copy Device LimaDetector
-      copy_file "ds_LimaDetector.pdb"           "applications/tango/LimaDetector/target/nar/"                           ""
+      copy_file "ds_LimaDetector.pdb"           "applications/tango/cpp/target/nar/"                           ""
 
       #copy lima.control library
       copy_file "LimaCore"                		"target/nar/lib/"                                                		"lib"
