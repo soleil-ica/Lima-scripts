@@ -103,10 +103,10 @@ echo ----------------------------------------------
 echo
 
 
-echo -------------- Tango -------------------------
-cd applications/tango
-git fetch git://github.com/esrf-bliss/Lima-tango
-cd ../..
+echo -------------- Tango/cpp -------------------------
+cd applications/tango/cpp
+git fetch git://github.com/esrf-bliss/Lima-tango-cpp
+cd ../../..
 echo ----------------------------------------------
 echo
 
