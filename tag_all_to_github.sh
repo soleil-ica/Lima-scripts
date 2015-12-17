@@ -140,10 +140,10 @@ echo
 
 
 echo -------------- Tango -------------------------
-cd applications/tango
+cd applications/tango/cpp
 git tag "$version" -m "$comment"
 git push --tag
-cd ../..
+cd ../../..
 echo ----------------------------------------------
 echo
 
