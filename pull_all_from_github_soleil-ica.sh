@@ -100,10 +100,10 @@ echo ----------------------------------------------
 echo
 
 
-echo -------------- Tango -------------------------
-cd applications/tango
-git pull --rebase git@github.com:soleil-ica/Lima-tango
-cd ../..
+echo -------------- Tango/cpp -------------------------
+cd applications/tango/cpp
+git pull --rebase git@github.com:soleil-ica/Lima-tango-cpp
+cd ../../..
 echo ----------------------------------------------
 echo
 
