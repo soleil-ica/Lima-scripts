@@ -91,13 +91,13 @@ def usage():
 #------------------------------------------------------------------------------
 # run
 #------------------------------------------------------------------------------
-def run(proxy_name = 'arafat/lima_basler/basler.2', exposure_time = 100, nb_frames = 10, file_generation = True, nb_loops = 1):
+def run(proxy_name = 'arafat/lima_basler/basler.2', exposure_time = 100, nb_frames = 10, file_generation_str = True, nb_loops = 1):
     # print arguments
     print '\nProgram inputs :\n--------------'
     print 'proxy_name\t = ', proxy_name
     print 'exposure_time\t =  %s (ms)' %(exposure_time)
     print 'nb_frames\t = ', nb_frames
-    print 'file_generation\t = ', file_generation
+    print 'file_generation\t = ', file_generation_str
     print 'nb_loops\t = ', nb_loops
     proxy = PyTango.DeviceProxy(proxy_name)
     #Configure the device
@@ -108,6 +108,7 @@ def run(proxy_name = 'arafat/lima_basler/basler.2', exposure_time = 100, nb_fram
     print 'write nbFrames'
     proxy.nbFrames = int(nb_frames)
     print 'write fileGeneration'
+    file_generation = True if file_generation_str.lower() == 'true' else False
     proxy.fileGeneration = int(file_generation)
     nb_loops = int(nb_loops)
     print '\n'
