@@ -49,6 +49,14 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+echo -------------- Eiger ------------------------
+cd camera/eiger
+git tag -d "$version"
+git push origin :refs/tags/"$version"
+cd ../..
+echo ----------------------------------------------
+echo
+
 echo -------------- Hamamatsu --------------------------
 cd camera/hamamatsu
 git tag -d "$version"
@@ -59,6 +67,14 @@ echo
 
 echo -------------- MarCCD ------------------------
 cd camera/marccd
+git tag -d "$version"
+git push origin :refs/tags/"$version"
+cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- Merlin ------------------------
+cd camera/merlin
 git tag -d "$version"
 git push origin :refs/tags/"$version"
 cd ../..
@@ -105,6 +121,15 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
+echo -------------- Uview -----------------------
+cd camera/uview
+git tag -d "$version"
+git push origin :refs/tags/"$version"
+cd ../..
+echo ----------------------------------------------
+echo 
+
+
 echo -------------- Xpad --------------------------
 cd camera/xpad
 git tag -d "$version"
@@ -115,10 +140,10 @@ echo
 
 
 echo -------------- Tango -------------------------
-cd applications/tango
+cd applications/tango/cpp
 git tag -d "$version"
 git push origin :refs/tags/"$version"
-cd ../..
+cd ../../..
 echo ----------------------------------------------
 echo
 

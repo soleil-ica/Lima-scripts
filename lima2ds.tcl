@@ -195,6 +195,9 @@ switch $::tcl_platform(platform) {
       #copy lima.camera plugin library
       copy_file "libLimaMerlin"                 "camera/merlin/target/nar/lib"                                          "lib"	  
 	  
+      #copy lima.camera plugin library
+      copy_file "libLimaImxpad"                 "camera/imxpad/target/nar/lib"                                          "lib"	  
+      
       ################################# shared library delivered by providers ###################################
             
       copy_file "libauxlib.so"             		"camera/adsc/sdk/adsc_sources/lib/linux"                                "lib"      
