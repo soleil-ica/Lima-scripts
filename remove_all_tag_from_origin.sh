@@ -65,6 +65,14 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+echo -------------- imXpad --------------------------
+cd camera/imxpad
+git tag -d "$version"
+git push origin :refs/tags/"$version"
+cd ../..
+echo ----------------------------------------------
+echo
+
 echo -------------- MarCCD ------------------------
 cd camera/marccd
 git tag -d "$version"

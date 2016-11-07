@@ -43,6 +43,20 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+echo -------------- Hamamatsu --------------------------
+cd camera/hamamatsu
+git pull --rebase git@github.com:soleil-ica/Lima-camera-hamamatsu
+cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- imXpad --------------------------
+cd camera/imxpad
+git pull --rebase git@github.com:soleil-ica/Lima-camera-imxpad
+cd ../..
+echo ----------------------------------------------
+echo
+
 echo -------------- MarCCD ------------------------
 cd camera/marccd
 git pull --rebase git@github.com:soleil-ica/Lima-camera-marccd
@@ -70,6 +84,13 @@ git pull --rebase git@github.com:soleil-ica/Lima-camera-perkinelmer
 cd ../..
 echo ----------------------------------------------
 echo
+
+echo -------------- Pilatus -----------------------
+cd camera/pilatus
+git pull --rebase git@github.com:soleil-ica/Lima-camera-pilatus
+cd ../..
+echo ----------------------------------------------
+echo 
 
 echo -------------- Prosilica -----------------------
 cd camera/prosilica

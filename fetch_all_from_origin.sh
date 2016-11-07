@@ -43,6 +43,20 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+echo -------------- Hamamatsu ------------------------
+cd camera/hamamatsu
+git fetch git@github.com:soleil-ica/Lima-camera-hamamatsu
+cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- imXpad --------------------------
+cd camera/imxpad
+git fetch git@github.com:soleil-ica/Lima-camera-imxpad
+cd ../..
+echo ----------------------------------------------
+echo
+
 echo -------------- MarCCD ------------------------
 cd camera/marccd
 git fetch git@github.com:soleil-ica/Lima-camera-marccd
@@ -67,6 +81,13 @@ echo
 echo -------------- Perkin Elmer ------------------------
 cd camera/perkinelmer
 git fetch git@github.com:soleil-ica/Lima-camera-perkinelmer
+cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- Pilatus ------------------------
+cd camera/pilatus
+git fetch git@github.com:soleil-ica/Lima-camera-pilatus
 cd ../..
 echo ----------------------------------------------
 echo
