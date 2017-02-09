@@ -17,14 +17,6 @@ git push origin :refs/tags/"$version"
 echo ----------------------------------------------
 echo
 
-echo -------------- ADSC --------------------------
-cd camera/adsc
-git tag -d "$version"
-git push origin :refs/tags/"$version"
-cd ../..
-echo ----------------------------------------------
-echo
-
 echo -------------- Andor --------------------------
 cd camera/andor
 git tag -d "$version"
