@@ -182,9 +182,6 @@ switch $::tcl_platform(platform) {
 
       #copy lima.camera plugin library
       copy_file "libLimaAviex"             		"camera/aviex/target/nar/lib"                                     		"lib"
-      
-      #copy lima.camera plugin library
-      copy_file "libLimaAdsc"             		"camera/adsc/target/nar/lib"                                     		"lib"
 
       #copy lima.camera plugin library
       copy_file "libLimaEiger"                  "camera/eiger/target/nar/lib"                                           "lib"
@@ -199,10 +196,6 @@ switch $::tcl_platform(platform) {
       copy_file "libLimaImxpad"                 "camera/imxpad/target/nar/lib"                                          "lib"	  
       
       ################################# shared library delivered by providers ###################################
-            
-      copy_file "libauxlib.so"             		"camera/adsc/sdk/adsc_sources/lib/linux"                                "lib"      
-      
-      copy_file "libdetcon_th.so"              	"camera/adsc/sdk/adsc_sources/lib/linux"                                "lib"
       
       copy_file "libPvAPI.so"             		"camera/prosilica/sdk/bin/x86"			                        		"lib"
 
