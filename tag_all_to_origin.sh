@@ -18,14 +18,6 @@ git push --tag
 echo ----------------------------------------------
 echo
 
-echo -------------- Adsc --------------------------
-cd camera/adsc
-git tag "$version" -m "$comment"
-git push --tag
-cd ../..
-echo ----------------------------------------------
-echo
-
 echo -------------- Andor --------------------------
 cd camera/andor
 git tag "$version" -m "$comment"
