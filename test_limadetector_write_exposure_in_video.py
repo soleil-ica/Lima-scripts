@@ -57,7 +57,11 @@ def run(proxy_name = 'arafat/lima_basler/basler.2', exposure_time = 100, write_p
             print '\r', timeBegin, "---> Writing exposure time = ", float(exposure_time)+float(int(current_loop)*float(exp_increment_value))
             proxy.exposureTime = float(exposure_time)+float(int(current_loop)*float(exp_increment_value))
             time.sleep(float(write_period)/1000.0)
+			while (proxy.currentFrame == 0)
+				time.sleep(float(1)/1000.0)
+			print proxy.image	
             current_loop+=1
+			            
             print '\noutput :\n--------------'
     except Exception as err:
 	   sys.stderr.write('--------------\nERROR :\n--------------\n%s\n' %err)
