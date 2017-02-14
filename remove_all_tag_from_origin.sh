@@ -41,6 +41,16 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+
+echo -------------- Espia ------------------------
+cd camera/common/espia
+git tag -d "$version"
+git push origin :refs/tags/"$version"
+cd ../../..
+echo ----------------------------------------------
+echo
+
+
 echo -------------- Eiger ------------------------
 cd camera/eiger
 git tag -d "$version"
@@ -67,6 +77,14 @@ echo
 
 echo -------------- MarCCD ------------------------
 cd camera/marccd
+git tag -d "$version"
+git push origin :refs/tags/"$version"
+cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- Maxipix ------------------------
+cd camera/maxipix
 git tag -d "$version"
 git push origin :refs/tags/"$version"
 cd ../..
