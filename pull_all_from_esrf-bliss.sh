@@ -8,13 +8,6 @@ git pull git://github.com/esrf-bliss/Lima.git
 echo ----------------------------------------------
 echo
 
-echo -------------- ADSC --------------------------
-cd camera/adsc
-git pull git://github.com/esrf-bliss/Lima-camera-adsc
-cd ../..
-echo ----------------------------------------------
-echo
-
 echo -------------- Andor -------------------------
 cd camera/andor
 git pull git://github.com/esrf-bliss/Lima-camera-andor

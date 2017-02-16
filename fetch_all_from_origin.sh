@@ -8,13 +8,6 @@ git fetch git@github.com:soleil-ica/Lima.git
 echo ----------------------------------------------
 echo
 
-echo -------------- ADSC --------------------------
-cd camera/adsc
-git fetch git@github.com:soleil-ica/Lima-camera-adsc
-cd ../..
-echo ----------------------------------------------
-echo
-
 echo -------------- Andor --------------------------
 cd camera/andor
 git fetch git@github.com:soleil-ica/Lima-camera-andor

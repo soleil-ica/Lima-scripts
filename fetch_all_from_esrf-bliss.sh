@@ -8,13 +8,6 @@ git fetch git://github.com/esrf-bliss/Lima.git
 echo ----------------------------------------------
 echo
 
-echo -------------- ADSC --------------------------
-cd camera/adsc
-git fetch git://github.com/esrf-bliss/Lima-camera-adsc
-cd ../..
-echo ----------------------------------------------
-echo
-
 echo -------------- Andor -------------------------
 cd camera/andor
 git fetch git://github.com/esrf-bliss/Lima-camera-andor
