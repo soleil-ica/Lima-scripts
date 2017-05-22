@@ -80,7 +80,7 @@ echo
 
 echo -------------- Pilatus -----------------------
 cd camera/pilatus
-git pull --rebase git@github.com:soleil-ica/Lima-camera-pilatus
+git pull --rebase git@github.com:soleil-ica/Lima-camera-pilatus PilatusSoleil
 cd ../..
 echo ----------------------------------------------
 echo 
