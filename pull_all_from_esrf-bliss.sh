@@ -30,7 +30,9 @@ echo ----------------------------------------------
 echo
 
 echo -------------- Eiger ------------------------
-echo Nothing to do
+cd camera/eiger
+git pull git://github.com/esrf-bliss/Lima-camera-eiger
+cd ../..
 echo ----------------------------------------------
 echo
 
