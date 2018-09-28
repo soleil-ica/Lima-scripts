@@ -3,10 +3,7 @@
 # Author: FL / AN
 # Date: 12/12/2014
 
-echo -------------- Lima Global -------------------
-git pull --rebase
-echo ----------------------------------------------
-echo
+
 
 echo -------------- Andor --------------------------
 cd camera/andor
@@ -124,6 +121,11 @@ echo -------------- Processlib --------------------
 cd third-party/Processlib
 git pull --rebase
 cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- Lima Global -------------------
+git pull --rebase
 echo ----------------------------------------------
 echo
 

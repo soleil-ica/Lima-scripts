@@ -3,11 +3,6 @@
 # Author: FL / AN
 # Date: 12/12/2014
 
-echo -------------- Lima Core -------------------
-git pull git://github.com/esrf-bliss/Lima.git
-echo ----------------------------------------------
-echo
-
 echo -------------- Andor -------------------------
 cd camera/andor
 git pull git://github.com/esrf-bliss/Lima-camera-andor
@@ -110,6 +105,11 @@ echo -------------- Processlib --------------------
 cd third-party/Processlib
 git pull git://github.com/esrf-bliss/Processlib.git
 cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- Lima Core -------------------
+git fetch git://github.com/esrf-bliss/Lima.git
 echo ----------------------------------------------
 echo
 
