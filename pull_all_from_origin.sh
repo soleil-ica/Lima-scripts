@@ -31,6 +31,13 @@ cd ../../..
 echo ----------------------------------------------
 echo
 
+echo -------------- Dhyana ------------------------
+cd camera/dhyana
+git pull --rebase
+cd ../..
+echo ----------------------------------------------
+echo
+
 echo -------------- Eiger ------------------------
 cd camera/eiger
 git pull --rebase
