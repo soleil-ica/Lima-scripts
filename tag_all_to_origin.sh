@@ -42,6 +42,14 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+echo -------------- Dhyana ---------------
+cd camera/dhyana
+git tag "$version" -m "$comment"
+git push --tag
+cd ../..
+echo ----------------------------------------------
+echo
+
 echo -------------- Espia ------------------------
 cd camera/common/espia
 git tag "$version" -m "$comment"
@@ -68,6 +76,14 @@ echo
 
 echo -------------- imXpad ------------------------
 cd camera/imxpad
+git tag "$version" -m "$comment"
+git push --tag
+cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- Lambda ---------------
+cd camera/lambda
 git tag "$version" -m "$comment"
 git push --tag
 cd ../..
@@ -146,6 +162,14 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
+echo -------------- Ufxc ---------------
+cd camera/ufxc
+git tag "$version" -m "$comment"
+git push --tag
+cd ../..
+echo ----------------------------------------------
+echo
+
 echo -------------- UView ---------------
 cd camera/uview
 git tag "$version" -m "$comment"
@@ -162,6 +186,13 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+echo -------------- Xpress3 ---------------
+cd camera/xspress3
+git tag "$version" -m "$comment"
+git push --tag
+cd ../..
+echo ----------------------------------------------
+echo
 
 echo -------------- Tango -------------------------
 cd applications/tango/cpp
