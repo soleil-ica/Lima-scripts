@@ -41,6 +41,13 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+echo -------------- Dhyana ------------------------
+cd camera/dhyana
+git tag -d "$version"
+git push origin :refs/tags/"$version"
+cd ../..
+echo ----------------------------------------------
+echo
 
 echo -------------- Espia ------------------------
 cd camera/common/espia
@@ -69,6 +76,14 @@ echo
 
 echo -------------- imXpad --------------------------
 cd camera/imxpad
+git tag -d "$version"
+git push origin :refs/tags/"$version"
+cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- Lambda ------------------------
+cd camera/lambda
 git tag -d "$version"
 git push origin :refs/tags/"$version"
 cd ../..
@@ -139,6 +154,14 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
+echo -------------- Ufxc ------------------------
+cd camera/ufxc
+git tag -d "$version"
+git push origin :refs/tags/"$version"
+cd ../..
+echo ----------------------------------------------
+echo
+
 echo -------------- Uview -----------------------
 cd camera/uview
 git tag -d "$version"
@@ -156,6 +179,13 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+echo -------------- Xpress3 ------------------------
+cd camera/xpress3
+git tag -d "$version"
+git push origin :refs/tags/"$version"
+cd ../..
+echo ----------------------------------------------
+echo
 
 echo -------------- Tango -------------------------
 cd applications/tango/cpp
