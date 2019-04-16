@@ -179,8 +179,8 @@ cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- Xpress3 ------------------------
-cd camera/xpress3
+echo -------------- Xspress3 ------------------------
+cd camera/xspress3
 git tag -d "$version"
 git push origin :refs/tags/"$version"
 cd ../..
