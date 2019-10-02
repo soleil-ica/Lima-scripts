@@ -3,11 +3,6 @@
 # Author: FL / AN
 # Date: 29/09/2015
 
-echo -------------- Lima Core -------------------
-git fetch git://github.com/esrf-bliss/Lima.git
-echo ----------------------------------------------
-echo
-
 echo -------------- Andor -------------------------
 cd camera/andor
 git fetch git://github.com/esrf-bliss/Lima-camera-andor
@@ -29,14 +24,51 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+echo -------------- Common/Espia ------------------------
+cd camera/common/espia
+git fetch git://github.com/esrf-bliss/Lima-camera-common-espia
+cd ../../..
+echo ----------------------------------------------
+echo
+
 echo -------------- Eiger ------------------------
-echo Nothing to do
+cd camera/eiger
+git fetch git://github.com/esrf-bliss/Lima-camera-eiger
+cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- Hamamatsu --------------------------
+cd camera/hamamatsu
+git fetch git://github.com/esrf-bliss/Lima-camera-hamamatsu
+cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- imXpad --------------------------
+cd camera/imxpad
+git fetch git://github.com/esrf-bliss/Lima-camera-imxpad
+cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- lambda --------------------------
+cd camera/lambda
+git fetch git://github.com/esrf-bliss/Lima-camera-lambda
+cd ../..
 echo ----------------------------------------------
 echo
 
 echo -------------- MarCCD ------------------------
 cd camera/marccd
 git fetch git://github.com/esrf-bliss/Lima-camera-marccd
+cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- Maxipix ------------------------
+cd camera/maxipix
+git fetch git://github.com/esrf-bliss/Lima-camera-maxipix
 cd ../..
 echo ----------------------------------------------
 echo
@@ -63,7 +95,7 @@ echo ----------------------------------------------
 echo
 
 echo -------------- Pilatus -----------------------
-echo Nothing to do
+echo Nothing to do : We use a SOLEIL specific version
 echo ----------------------------------------------
 echo 
 
@@ -81,20 +113,12 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- Uview --------------------------
-cd camera/uview
-git fetch git://github.com/esrf-bliss/Lima-camera-uview
-cd ../..
-echo ----------------------------------------------
-echo
-
 echo -------------- Xpad --------------------------
 cd camera/xpad
 git fetch git://github.com/esrf-bliss/Lima-camera-xpad
 cd ../..
 echo ----------------------------------------------
 echo
-
 
 echo -------------- Tango/cpp -------------------------
 cd applications/tango/cpp
@@ -103,7 +127,6 @@ cd ../../..
 echo ----------------------------------------------
 echo
 
-
 echo -------------- Processlib --------------------
 cd third-party/Processlib
 git fetch git://github.com/esrf-bliss/Processlib.git
@@ -111,3 +134,7 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+echo -------------- Lima Core -------------------
+git fetch git://github.com/esrf-bliss/Lima.git
+echo ----------------------------------------------
+echo

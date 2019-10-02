@@ -3,176 +3,176 @@
 # Author: FL / AN
 # Date: 12/12/2014
 
-echo -------------- Andor --------------------------
+echo -------------- Andor -------------------------
 cd camera/andor
-git pull --rebase
+git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- Aviex --------------------------
+echo -------------- Aviex -------------------------
 cd camera/aviex
-git pull --rebase
+git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------
 echo
 
 echo -------------- Basler ------------------------
 cd camera/basler
-git pull --rebase
+git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- Common/Espia ------------------------
+echo -------------- Common/Espia ------------------
 cd camera/common/espia
-git pull --rebase
+git pull --rebase=preserve
 cd ../../..
 echo ----------------------------------------------
 echo
 
 echo -------------- Dhyana ------------------------
 cd camera/dhyana
-git pull --rebase
+git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- Eiger ------------------------
+echo -------------- Eiger -------------------------
 cd camera/eiger
-git pull --rebase
+git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- Hamamatsu --------------------------
+echo -------------- Hamamatsu ---------------------
 cd camera/hamamatsu
-git pull --rebase
+git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- imXpad --------------------------
+echo -------------- imXpad ------------------------
 cd camera/imxpad
-git pull --rebase
+git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- lambda --------------------------
+echo -------------- lambda ------------------------
 cd camera/lambda
-git pull --rebase
+git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------
 echo
 
 echo -------------- MarCCD ------------------------
 cd camera/marccd
-git pull --rebase
+git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- Maxipix ------------------------
+echo -------------- Maxipix -----------------------
 cd camera/maxipix
-git pull --rebase
+git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------
 echo
 
 echo -------------- Merlin ------------------------
 cd camera/merlin
-git pull --rebase
+git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- PCO ------------------------
+echo -------------- PCO ---------------------------
 cd camera/pco
-git pull --rebase
+git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- Perkin Elmer ------------------------
+echo -------------- Perkin Elmer ------------------
 cd camera/perkinelmer
-git pull --rebase
+git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------
 echo
 
 echo -------------- Pilatus -----------------------
 cd camera/pilatus
-git pull --rebase
+git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- Prosilica -----------------------
+echo -------------- Prosilica ---------------------
 cd camera/prosilica
-git pull --rebase
+git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- Roperscientific -----------------------
+echo -------------- Roperscientific ---------------
 cd camera/roperscientific
-git pull --rebase
+git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- slsdetector -----------------------
-cd camera/slsdetector
-git pull --rebase
-cd ../..
-echo ----------------------------------------------
-echo 
-
-echo -------------- slsjungfrau -----------------------
+echo -------------- slsjungfrau -------------------
 cd camera/slsjungfrau
-git pull --rebase
+git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- ufxc -----------------------
+echo -------------- ufxc --------------------------
 cd camera/ufxc
-git pull --rebase
+git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- Uview --------------------------
+echo -------------- Uview -------------------------
 cd camera/uview
-git pull --rebase
+git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------
 echo
 
 echo -------------- Xpad --------------------------
 cd camera/xpad
-git pull --rebase
+git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- Tango/cpp -------------------------
+echo -------------- Xspress3 ----------------------
+cd camera/xspress3
+git pull --rebase=preserve
+cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- Tango/cpp ---------------------
 cd applications/tango/cpp
-git pull --rebase
+git pull --rebase=preserve
 cd ../../..
 echo ----------------------------------------------
 echo
 
 echo -------------- Processlib --------------------
 cd third-party/Processlib
-git pull --rebase
+git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- Lima Global -------------------
-git pull --rebase
+echo -------------- Lima Core ---------------------
+git pull --rebase=preserve
 echo ----------------------------------------------
 echo
 

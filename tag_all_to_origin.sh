@@ -5,7 +5,7 @@
 
 # arguments 
 if [ $# -ne 2 ]; then
-	echo "Usage: ./tag_all_github.sh version comment"
+	echo "Usage: ./tag_all_to_origin.sh version comment"
 	exit 2
 fi
 
