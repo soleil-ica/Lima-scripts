@@ -154,6 +154,14 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
+echo -------------- SLSJungfrau ---------------
+cd camera/slsjungfrau
+git tag -d "$version"
+git push origin :refs/tags/"$version"
+cd ../..
+echo ----------------------------------------------
+echo 
+
 echo -------------- Ufxc ------------------------
 cd camera/ufxc
 git tag -d "$version"
