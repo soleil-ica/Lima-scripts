@@ -10,13 +10,6 @@ cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- Aviex -------------------------
-cd camera/aviex
-git pull --rebase=preserve
-cd ../..
-echo ----------------------------------------------
-echo
-
 echo -------------- Basler ------------------------
 cd camera/basler
 git pull --rebase=preserve
@@ -124,6 +117,13 @@ echo
 
 echo -------------- slsjungfrau -------------------
 cd camera/slsjungfrau
+git pull --rebase=preserve
+cd ../..
+echo ----------------------------------------------
+echo 
+
+echo -------------- slseiger -------------------
+cd camera/slseiger
 git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------

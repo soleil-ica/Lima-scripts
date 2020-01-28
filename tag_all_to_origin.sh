@@ -26,14 +26,6 @@ cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- Aviex --------------------------
-cd camera/aviex
-git tag "$version" -m "$comment"
-git push --tag
-cd ../..
-echo ----------------------------------------------
-echo
-
 echo -------------- Basler ------------------------
 cd camera/basler
 git tag "$version" -m "$comment"
@@ -156,6 +148,14 @@ echo
 
 echo -------------- SLSJungfrau ---------------
 cd camera/slsjungfrau
+git tag "$version" -m "$comment"
+git push --tag
+cd ../..
+echo ----------------------------------------------
+echo 
+
+echo -------------- SLSEiger ---------------
+cd camera/slseiger
 git tag "$version" -m "$comment"
 git push --tag
 cd ../..

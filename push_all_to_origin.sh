@@ -10,13 +10,6 @@ cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- Aviex --------------------------
-cd camera/aviex
-git push
-cd ../..
-echo ----------------------------------------------
-echo
-
 echo -------------- Basler ------------------------
 cd camera/basler
 git push
@@ -124,6 +117,13 @@ echo
 
 echo -------------- slsjungfrau -----------------------
 cd camera/slsjungfrau
+git push
+cd ../..
+echo ----------------------------------------------
+echo 
+
+echo -------------- slseiger -----------------------
+cd camera/slseiger
 git push
 cd ../..
 echo ----------------------------------------------
