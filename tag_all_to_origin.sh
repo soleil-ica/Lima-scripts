@@ -146,16 +146,16 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- SLSJungfrau ---------------
-cd camera/slsjungfrau
+echo -------------- SLSEiger ---------------
+cd camera/slseiger
 git tag "$version" -m "$comment"
 git push --tag
 cd ../..
 echo ----------------------------------------------
-echo 
+echo
 
-echo -------------- SLSEiger ---------------
-cd camera/slseiger
+echo -------------- SLSJungfrau ---------------
+cd camera/slsjungfrau
 git tag "$version" -m "$comment"
 git push --tag
 cd ../..

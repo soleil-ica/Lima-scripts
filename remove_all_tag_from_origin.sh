@@ -11,7 +11,7 @@ fi
 
 version=$1
 
-echo -------------- Lima Global -------------------
+echo -------------- Lima Core -------------------
 git tag -d "$version"
 git push origin :refs/tags/"$version"
 echo ----------------------------------------------
@@ -19,14 +19,6 @@ echo
 
 echo -------------- Andor --------------------------
 cd camera/andor
-git tag -d "$version"
-git push origin :refs/tags/"$version"
-cd ../..
-echo ----------------------------------------------
-echo
-
-echo -------------- Aviex --------------------------
-cd camera/aviex
 git tag -d "$version"
 git push origin :refs/tags/"$version"
 cd ../..
@@ -153,6 +145,14 @@ git push origin :refs/tags/"$version"
 cd ../..
 echo ----------------------------------------------
 echo 
+
+echo -------------- SLSEiger ---------------
+cd camera/slseiger
+git tag "$version" -m "$comment"
+git push --tag
+cd ../..
+echo ----------------------------------------------
+echo
 
 echo -------------- SLSJungfrau ---------------
 cd camera/slsjungfrau
