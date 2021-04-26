@@ -10,13 +10,6 @@ cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- Aviex -------------------------
-cd camera/aviex
-git pull --rebase=preserve git://github.com/esrf-bliss/Lima-camera-aviex
-cd ../..
-echo ----------------------------------------------
-echo
-
 echo -------------- Basler ------------------------
 cd camera/basler
 git pull --rebase=preserve git://github.com/esrf-bliss/Lima-camera-basler

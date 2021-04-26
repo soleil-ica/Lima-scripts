@@ -129,6 +129,20 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
+echo -------------- spectralinstrument -------------------
+cd camera/spectralinstrument
+git pull --rebase=preserve
+cd ../..
+echo ----------------------------------------------
+echo 
+
+echo -------------- spectrumoneccd -------------------
+cd camera/spectrumoneccd
+git pull --rebase=preserve
+cd ../..
+echo ----------------------------------------------
+echo 
+
 echo -------------- ufxc --------------------------
 cd camera/ufxc
 git pull --rebase=preserve

@@ -115,6 +115,13 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
+echo -------------- slseiger -----------------------
+cd camera/slseiger
+git push
+cd ../..
+echo ----------------------------------------------
+echo 
+
 echo -------------- slsjungfrau -----------------------
 cd camera/slsjungfrau
 git push
@@ -122,8 +129,15 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- slseiger -----------------------
-cd camera/slseiger
+echo -------------- spectralinstrument -----------------------
+cd camera/spectralinstrument
+git push
+cd ../..
+echo ----------------------------------------------
+echo 
+
+echo -------------- spectrumoneccd -----------------------
+cd camera/spectrumoneccd
 git push
 cd ../..
 echo ----------------------------------------------

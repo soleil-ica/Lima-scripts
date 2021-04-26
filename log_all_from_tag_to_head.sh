@@ -142,6 +142,20 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
+echo -------------- SpectralInstrument ---------------
+cd camera/spectralinstrument
+git log --pretty="%h - %s (%an)" $tag..HEAD
+cd ../..
+echo ----------------------------------------------
+echo 
+
+echo -------------- SpectrumOneCCD ---------------
+cd camera/spectrumoneccd
+git log --pretty="%h - %s (%an)" $tag..HEAD
+cd ../..
+echo ----------------------------------------------
+echo 
+
 echo -------------- Ufxc ------------------------
 cd camera/ufxc
 git log --pretty="%h - %s (%an)" $tag..HEAD

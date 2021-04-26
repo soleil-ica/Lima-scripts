@@ -10,13 +10,6 @@ cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- Aviex -------------------------
-cd camera/aviex
-git fetch git://github.com/esrf-bliss/Lima-camera-aviex
-cd ../..
-echo ----------------------------------------------
-echo
-
 echo -------------- Basler ------------------------
 cd camera/basler
 git fetch git://github.com/esrf-bliss/Lima-camera-basler
@@ -28,6 +21,14 @@ echo -------------- Common/Espia ------------------------
 cd camera/common/espia
 git fetch git://github.com/esrf-bliss/Lima-camera-common-espia
 cd ../../..
+echo ----------------------------------------------
+echo
+
+
+echo -------------- dhyana ------------------------
+cd camera/dhyana
+git fetch git://github.com/esrf-bliss/Lima-camera-dhyana
+cd ../..
 echo ----------------------------------------------
 echo
 
@@ -113,9 +114,58 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
+echo -------------- slseiger -----------------------
+cd camera/slseiger
+git fetch git://github.com/esrf-bliss/Lima-camera-slseiger
+cd ../..
+echo ----------------------------------------------
+echo 
+
+echo -------------- slsjungfrau -----------------------
+cd camera/slsjungfrau
+git fetch git://github.com/esrf-bliss/Lima-camera-slsjungfrau
+cd ../..
+echo ----------------------------------------------
+echo 
+
+echo -------------- spectralinstrument -----------------------
+cd camera/spectralinstrument
+git fetch git://github.com/esrf-bliss/Lima-camera-spectralinstrument
+cd ../..
+echo ----------------------------------------------
+echo 
+
+echo -------------- spectrumoneccd -----------------------
+cd camera/spectrumoneccd
+git fetch git://github.com/esrf-bliss/Lima-camera-spectrumoneccd
+cd ../..
+echo ----------------------------------------------
+echo 
+
+echo -------------- ufxc -----------------------
+cd camera/ufxc
+git fetch git://github.com/esrf-bliss/Lima-camera-ufxc
+cd ../..
+echo ----------------------------------------------
+echo 
+
+echo -------------- uview -----------------------
+cd camera/uview
+git fetch git://github.com/esrf-bliss/Lima-camera-uview
+cd ../..
+echo ----------------------------------------------
+echo 
+
 echo -------------- Xpad --------------------------
 cd camera/xpad
 git fetch git://github.com/esrf-bliss/Lima-camera-xpad
+cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- xspress3 --------------------------
+cd camera/xspress3
+git fetch git://github.com/esrf-bliss/Lima-camera-xspress3
 cd ../..
 echo ----------------------------------------------
 echo
