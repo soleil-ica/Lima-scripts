@@ -149,8 +149,8 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- SpectrumOneCCD ---------------
-cd camera/spectrumoneccd
+echo -------------- SpectrumOne ---------------
+cd camera/spectrumone
 git log --pretty="%h - %s (%an)" $tag..HEAD
 cd ../..
 echo ----------------------------------------------

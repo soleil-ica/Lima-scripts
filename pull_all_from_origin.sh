@@ -136,8 +136,8 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- spectrumoneccd -------------------
-cd camera/spectrumoneccd
+echo -------------- spectrumone -------------------
+cd camera/spectrumone
 git pull --rebase=preserve
 cd ../..
 echo ----------------------------------------------

@@ -170,8 +170,8 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- spectrumoneccd ---------------
-cd camera/spectrumoneccd
+echo -------------- spectrumone ---------------
+cd camera/spectrumone
 git tag -d "$tagname"
 git push origin :refs/tags/"$tagname"
 cd ../..

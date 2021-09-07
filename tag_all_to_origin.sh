@@ -171,8 +171,8 @@ cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- spectrumoneccd ---------------
-cd camera/spectrumoneccd
+echo -------------- spectrumone ---------------
+cd camera/spectrumone
 git tag "$tagname" -m "$comment"
 git push --tag
 cd ../..

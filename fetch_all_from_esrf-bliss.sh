@@ -135,9 +135,9 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- spectrumoneccd -----------------------
-cd camera/spectrumoneccd
-git fetch git://github.com/esrf-bliss/Lima-camera-spectrumoneccd
+echo -------------- spectrumone -----------------------
+cd camera/spectrumone
+git fetch git://github.com/esrf-bliss/Lima-camera-spectrumone
 cd ../..
 echo ----------------------------------------------
 echo 

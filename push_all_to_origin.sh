@@ -136,8 +136,8 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- spectrumoneccd -----------------------
-cd camera/spectrumoneccd
+echo -------------- spectrumone -----------------------
+cd camera/spectrumone
 git push
 cd ../..
 echo ----------------------------------------------
