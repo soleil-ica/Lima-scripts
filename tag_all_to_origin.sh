@@ -34,7 +34,6 @@ cd ../..
 echo ----------------------------------------------
 echo
 
-
 echo -------------- Common/Espia ------------------------
 cd camera/common/espia
 git tag "$tagname" -m "$comment"
@@ -45,6 +44,14 @@ echo
 
 echo -------------- Dhyana ---------------
 cd camera/dhyana
+git tag "$tagname" -m "$comment"
+git push --tag
+cd ../..
+echo ----------------------------------------------
+echo
+
+echo -------------- Dhyana6060 ---------------
+cd camera/dhyana6060
 git tag "$tagname" -m "$comment"
 git push --tag
 cd ../..
@@ -131,14 +138,6 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- Prosilica --------------------------
-cd camera/prosilica
-git tag "$tagname" -m "$comment"
-git push --tag
-cd ../..
-echo ----------------------------------------------
-echo
-
 echo -------------- RoperScientific ---------------
 cd camera/roperscientific
 git tag "$tagname" -m "$comment"
@@ -197,14 +196,6 @@ echo
 
 echo -------------- Xpad --------------------------
 cd camera/xpad
-git tag "$tagname" -m "$comment"
-git push --tag
-cd ../..
-echo ----------------------------------------------
-echo
-
-echo -------------- Xspress3 ---------------
-cd camera/xspress3
 git tag "$tagname" -m "$comment"
 git push --tag
 cd ../..

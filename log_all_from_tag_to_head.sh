@@ -37,6 +37,13 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+echo -------------- Dhyana6060 ------------------------
+cd camera/dhyana6060
+git log --pretty="%h - %s (%an)" $tag..HEAD
+cd ../..
+echo ----------------------------------------------
+echo
+
 echo -------------- Espia ------------------------
 cd camera/common/espia
 git log --pretty="%h - %s (%an)" $tag..HEAD
@@ -114,13 +121,6 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- Prosilica -----------------------
-cd camera/prosilica
-git log --pretty="%h - %s (%an)" $tag..HEAD
-cd ../..
-echo ----------------------------------------------
-echo 
-
 echo -------------- Roperscientific -----------------------
 cd camera/roperscientific
 git log --pretty="%h - %s (%an)" $tag..HEAD
@@ -178,12 +178,6 @@ cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- Xspress3 ------------------------
-cd camera/xspress3
-git log --pretty="%h - %s (%an)" $tag..HEAD
-cd ../..
-echo ----------------------------------------------
-echo
 
 echo -------------- Tango -------------------------
 cd applications/tango/cpp

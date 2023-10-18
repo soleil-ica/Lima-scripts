@@ -41,6 +41,14 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+echo -------------- Dhyana6060 ------------------------
+cd camera/dhyana6060
+git tag -d "$tagname"
+git push origin :refs/tags/"$tagname"
+cd ../..
+echo ----------------------------------------------
+echo
+
 echo -------------- Espia ------------------------
 cd camera/common/espia
 git tag -d "$tagname"
@@ -130,14 +138,6 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- Prosilica -----------------------
-cd camera/prosilica
-git tag -d "$tagname"
-git push origin :refs/tags/"$tagname"
-cd ../..
-echo ----------------------------------------------
-echo 
-
 echo -------------- Roperscientific -----------------------
 cd camera/roperscientific
 git tag -d "$tagname"
@@ -203,13 +203,6 @@ cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- Xspress3 ------------------------
-cd camera/xspress3
-git tag -d "$tagname"
-git push origin :refs/tags/"$tagname"
-cd ../..
-echo ----------------------------------------------
-echo
 
 echo -------------- Tango -------------------------
 cd applications/tango/cpp

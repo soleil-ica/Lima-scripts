@@ -31,6 +31,13 @@ cd ../..
 echo ----------------------------------------------
 echo
 
+echo -------------- Dhyana6060 ------------------------
+cd camera/dhyana6060
+git push
+cd ../..
+echo ----------------------------------------------
+echo
+
 echo -------------- Eiger ------------------------
 cd camera/eiger
 git push
@@ -101,13 +108,6 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- Prosilica -----------------------
-cd camera/prosilica
-git push
-cd ../..
-echo ----------------------------------------------
-echo 
-
 echo -------------- Roperscientific -----------------------
 cd camera/roperscientific
 git push
@@ -164,12 +164,6 @@ cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- Xspress3 --------------------------
-cd camera/xspress3
-git push
-cd ../..
-echo ----------------------------------------------
-echo
 
 echo -------------- Tango/cpp -------------------------
 cd applications/tango/cpp

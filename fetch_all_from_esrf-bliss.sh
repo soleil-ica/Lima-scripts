@@ -100,13 +100,6 @@ echo Nothing to do : We use a SOLEIL specific version
 echo ----------------------------------------------
 echo 
 
-echo -------------- Prosilica -----------------------
-cd camera/prosilica
-git fetch git://github.com/esrf-bliss/Lima-camera-prosilica
-cd ../..
-echo ----------------------------------------------
-echo 
-
 echo -------------- Roperscientific -----------------------
 cd camera/roperscientific
 git fetch git://github.com/esrf-bliss/Lima-camera-roperscientific
@@ -163,12 +156,6 @@ cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- xspress3 --------------------------
-cd camera/xspress3
-git fetch git://github.com/esrf-bliss/Lima-camera-xspress3
-cd ../..
-echo ----------------------------------------------
-echo
 
 echo -------------- Tango/cpp -------------------------
 cd applications/tango/cpp
