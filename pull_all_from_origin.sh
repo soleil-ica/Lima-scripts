@@ -31,7 +31,7 @@ cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- Dhyana6060 ------------------------
+echo -------------- Dhyana6060 --------------------
 cd camera/dhyana6060
 git pull --rebase=merges
 cd ../..
@@ -52,14 +52,14 @@ cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- imXpad ------------------------
+echo -------------- ImXpad ------------------------
 cd camera/imxpad
 git pull --rebase=merges
 cd ../..
 echo ----------------------------------------------
 echo
 
-echo -------------- lambda ------------------------
+echo -------------- Lambda ------------------------
 cd camera/lambda
 git pull --rebase=merges
 cd ../..
@@ -115,35 +115,35 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- slsjungfrau -------------------
+echo -------------- SLSJungfrau -------------------
 cd camera/slsjungfrau
 git pull --rebase=merges
 cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- slseiger -------------------
+echo ---------------- SLSEiger --------------------
 cd camera/slseiger
 git pull --rebase=merges
 cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- spectralinstrument -------------------
+echo ----------- SpectralInstrument ---------------
 cd camera/spectralinstrument
 git pull --rebase=merges
 cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- spectrumone -------------------
+echo -------------- SpectrumOne -------------------
 cd camera/spectrumone
 git pull --rebase=merges
 cd ../..
 echo ----------------------------------------------
 echo 
 
-echo -------------- ufxc --------------------------
+echo -------------- Ufxc --------------------------
 cd camera/ufxc
 git pull --rebase=merges
 cd ../..
