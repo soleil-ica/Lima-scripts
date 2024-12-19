@@ -108,6 +108,13 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
+echo -------------- Princeton aka TeledynePI ------
+cd camera/princeton
+git push
+cd ../..
+echo ----------------------------------------------
+echo 
+
 echo -------------- Roperscientific -----------------------
 cd camera/roperscientific
 git push

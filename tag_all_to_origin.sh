@@ -138,6 +138,14 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
+echo -------------- Princeton aka TeledynePI ------
+cd camera/princeton
+git tag "$tagname" -m "$comment"
+git push --tag
+cd ../..
+echo ----------------------------------------------
+echo 
+
 echo -------------- RoperScientific ---------------
 cd camera/roperscientific
 git tag "$tagname" -m "$comment"

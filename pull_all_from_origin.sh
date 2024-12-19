@@ -108,6 +108,13 @@ cd ../..
 echo ----------------------------------------------
 echo 
 
+echo -------------- Princeton aka TeledynePI ------
+cd camera/princeton
+git pull --rebase=merges
+cd ../..
+echo ----------------------------------------------
+echo 
+
 echo -------------- Roperscientific ---------------
 cd camera/roperscientific
 git pull --rebase=merges
